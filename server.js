@@ -20,7 +20,8 @@ app.get("/generate_qrcode/:outputtype", async (req, res) => {
                     result = { encodedData: url.slice(22) };
                     break;
                 case "image":
-                    result = { imgHtmlTag: `<img src="${url}">` }
+             let encodedData = url.slice(22);
+                    result = { imgHtmlTag: `<img src='data:image/png;base64,${encodedData}', alt='QR-Code'>` }
                     break;
             }
             res.json(result);
