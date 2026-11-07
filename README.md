@@ -19,7 +19,7 @@ QR-Code API generates the QR Code for given input and returns in these two types
 
 ### How to use it?
 - After getting the files, go to any CLI like BASH and then **cd** towards the project file.
-- And then write "node server.js" (Make sure the node has already been installed)
+- And then write "node server.js" in the Command Line (Make sure the node has already been installed)
 - You will see the message: "Server Listening on Port 3000"
 - And then, make a **GET** request to this link "http:localhost:3000/[outputType]?size=[outputSize]&&data=[Data]"
   In [outputType], write the type of output you want either, "base64" or "image". In case of base64, you will get a JSON with base64 encoded data of the QR-Code Image. In case of image, you will get a JSON with HTML image tag of QR-Code.
